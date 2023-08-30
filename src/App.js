@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
+import { TypeAnimation } from 'react-type-animation';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     
+     <TypeAnimation
+  sequence={[
+    // Same substring at the start will only be typed once, initially
+    'Students are converted here to Professional Programmers',
+    1000,
+    'Students are converted here to Professional Developers',
+    1000,
+    'Students are converted here to Professional Leaders',
+    1000,
+    'Students are converted here to Professional Developers',
+    1000,
+  ]}
+  speed={50}
+  style={{ fontSize: '2em' }}
+  repeat={Infinity}
+/>
+
     </div>
   );
 }
