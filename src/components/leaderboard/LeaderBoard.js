@@ -2,7 +2,9 @@ import React from 'react'
 
 const LeaderBoard = () => {
   return (
-    <div>LeaderBoard</div>
+    <div>
+      <h1>LeaderBoard</h1>
+    </div>
   )
 }
 

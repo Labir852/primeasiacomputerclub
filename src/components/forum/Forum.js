@@ -2,7 +2,9 @@ import React from 'react'
 
 const Forum = () => {
   return (
-    <div>Forum</div>
+    <div>
+      <h1>Forum</h1>
+    </div>
   )
 }
 
