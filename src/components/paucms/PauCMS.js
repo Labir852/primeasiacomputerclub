@@ -2,7 +2,9 @@ import React from 'react'
 
 const PauCMS = () => {
   return (
-    <div>PauCMS</div>
+    <div>
+      <h1>PauCMS</h1>
+    </div>
   )
 }
 

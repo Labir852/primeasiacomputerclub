@@ -2,7 +2,9 @@ import React from 'react'
 
 const AlgorithmVisualizer = () => {
   return (
-    <div>AlgorithmVisualizer</div>
+    <div>
+      <h1>AlgorithmVisualizer</h1>
+    </div>
   )
 }
 

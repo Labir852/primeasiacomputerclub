@@ -2,7 +2,9 @@ import React from 'react'
 
 const History = () => {
   return (
-    <div>History</div>
+    <div>
+      <h1>History</h1>
+    </div>
   )
 }
 
