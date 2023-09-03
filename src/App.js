@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home/Home';
 import About from './components/about/About';
@@ -27,7 +27,8 @@ function App() {
   return (
     <div>
       <Header/>
-      <BrowserRouter>
+
+      
         <Routes>
           <Route path ="/" element={<Home/>}/>
           <Route path ="/about" element={<About/>}/>
@@ -48,7 +49,7 @@ function App() {
           <Route path ="/footer" element={<Footer/>}/>
           <Route path ="*" element={<NotFound/>}/>
         </Routes>
-      </BrowserRouter>
+      
     </div>
   );
 }

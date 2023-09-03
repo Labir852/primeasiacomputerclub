@@ -1,13 +1,13 @@
-import React, { useEffect } from 'react'
-import universitylogo from '../../assets/primeasia.gif'
-import { BrowserRouter, Link, Routes, useLocation } from 'react-router-dom'
+import React from 'react'
+//import universitylogo from '../../assets/primeasia.gif'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
 
   return (
     <div>
       {/* <img src={universitylogo}/> */}
-      <BrowserRouter>
+     
       <nav>
         <ul>
           <li>
@@ -61,7 +61,7 @@ const Header = () => {
           
         </ul>
       </nav>
-      </BrowserRouter>
+
 
 
     </div>
