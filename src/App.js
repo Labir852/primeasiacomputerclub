@@ -1,6 +1,9 @@
 
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+
+
 import './App.css';
+
 import Home from './components/Home/Home';
 import About from './components/about/About';
 import Chat from './components/chat/Chat';
@@ -25,7 +28,7 @@ import Header from './components/header/Header';
 
 function App() {
   return (
-    <div>
+    <div className='bg-blue-200'>
       <Header/>
 
       
