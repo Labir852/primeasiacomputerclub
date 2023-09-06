@@ -1,14 +1,18 @@
 import React from 'react'
 //import universitylogo from '../../assets/primeasia.gif'
+
 import {AiOutlineMenu} from "react-icons/ai"
 import { Link } from 'react-router-dom'
 import links from './navitems'
 import { useState } from 'react'
 
+
+
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
+
     <nav className='px-4 py-8 sticky top-0 z-10 bg-transparent backdrop-filter backdrop-blur-sm bg-opacity-20  border-b border-gray-200'>
       <div className="w-full mx-auto px-4">
         <div className='flex items-center justify-between'>
@@ -33,6 +37,64 @@ const Header = () => {
             <AiOutlineMenu size={25} className='flex md:hidden cursor-pointer hover:text-indigo-500 items-center'/>
             
         </div>
+
+    <div>
+      {/* <img src={universitylogo}/> */}
+     
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/event">Event</Link>
+          </li>
+          <li>
+            <Link to="/forum">Forum</Link>
+          </li>
+          <li>
+            <Link to="/history">History</Link>
+          </li>
+          <li>
+            <Link to="/leaderboard">LeaderBoard</Link>
+          </li>
+          <li>
+            <Link to="/media">Media</Link>
+          </li>
+          <li>
+            <Link to="/practice">Practice</Link>
+          </li>
+          <li>
+            <Link to="/paucms">PauCMS</Link>
+          </li>
+          <li>
+            <Link to="/academics">Academics</Link>
+          </li>
+          <li>
+            <Link to="/algorithmvisualizer">AlgorithmVisualizer</Link>
+          </li>
+          <li>
+            <Link to="/resources">Resources</Link>
+          </li>
+          <li>
+            <Link to="/roadmap">Roadmap</Link>
+          </li>
+          <li>
+            <Link to="/team">Team</Link>
+          </li>
+          <li>
+            <Link to="/resumebuilder">ResumeBuilder</Link>
+          </li>
+          <li>
+            <Link to="/footer">Footer</Link>
+          </li>
+          
+        </ul>
+      </nav>
+
 
 
 
