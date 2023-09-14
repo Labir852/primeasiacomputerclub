@@ -3,18 +3,14 @@ import React from 'react';
 import universitylogo from '../../assets/primeasia.gif';
 import { Link } from 'react-router-dom';
 
-import React from 'react'
-//import universitylogo from '../../assets/primeasia.gif'
-
 import {AiOutlineMenu} from "react-icons/ai"
-import { Link } from 'react-router-dom'
 import links from './navitems'
-import { useState } from 'react'
+// import { useState } from 'react'
 
 
 
 const Header = () => {
-  const [toggle, setToggle] = useState(false);
+ // const [toggle, setToggle] = useState(false);
 
   return (
 
@@ -22,7 +18,7 @@ const Header = () => {
       <div className="w-full mx-auto px-4">
         <div className='flex items-center justify-between'>
           <div className='flex flex-1'>
-            {/* <img src={universitylogo}/> */}
+            <img src={universitylogo}/>
           </div>
           <ul className="hidden md:flex flex-1 space-x-4 font-medium text-gray-900 ">
           {links.slice(0, 8).map((link) => (
@@ -42,13 +38,14 @@ const Header = () => {
             <AiOutlineMenu size={25} className='flex md:hidden cursor-pointer hover:text-indigo-500 items-center'/>
             
         </div>
-
+{/* 
     <div>
+
       <img src={universitylogo} alt="" style={{height:'200px',width:'550px'}}/>
 
-      {/* <img src={universitylogo}/> */}
+       <img src={universitylogo}/> 
      
-      <nav>
+     <nav>
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -101,8 +98,7 @@ const Header = () => {
           
         </ul>
       </nav>
-
-    </div>
+    </div> */}
 
 
 
