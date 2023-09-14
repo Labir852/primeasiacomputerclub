@@ -1,7 +1,5 @@
 
 import { Route, Routes } from 'react-router-dom';
-
-
 import './App.css';
 
 import Home from './components/Home/Home';
@@ -30,8 +28,6 @@ function App() {
   return (
     <div className='bg-blue-200'>
       <Header/>
-
-      
         <Routes>
           <Route path ="/" element={<Home/>}/>
           <Route path ="/about" element={<About/>}/>
@@ -52,7 +48,6 @@ function App() {
           <Route path ="/footer" element={<Footer/>}/>
           <Route path ="*" element={<NotFound/>}/>
         </Routes>
-      
     </div>
   );
 }
